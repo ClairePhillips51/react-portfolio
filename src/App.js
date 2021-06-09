@@ -3,12 +3,14 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import Header from "./components/Header";
 import './App.css';
 
 function App() {
   return (
     <Router>
       <div>
+        <Header />
         <div>
           <Route exact path="/" component={About} />
           <Route exact path="/about" component={About} />
