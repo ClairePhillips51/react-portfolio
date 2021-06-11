@@ -4,6 +4,7 @@ function About() {
     return (
         <div>
         <h2> About Me: </h2>
+        <div id=
         <p>
             I'm Claire Phillips. I am learning full stack web development with experience in digital marketing and public relations. 
             I am a digital marketing specialist at Dart Container corporation and am looking to take on the world of web developement. 
