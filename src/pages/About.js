@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import "./about.css";
 
 function About() {
     return (
@@ -10,7 +11,7 @@ function About() {
             <div id="fancy_Circle">
                 <img id="headshot" src ="./images/claire2.jpg" alt="A head shot of Claire Phillips" />
                 <h3> Claire Phillips</h3>
-                <a href="pictures/Claire_Phillips_Resume2.pdf" target="_blank" rel="noreferrer"> My Reusme</a>
+                <a href="pictures/Claire_Phillips_Resume2.pdf" target="_blank" rel="noreferrer"> My Resume</a>
                 <p> Connect with me: </p>
                 <div className="social-links">
                     <a href="mailto:claireacam@gmail.com" target="_blank" rel="noreferrer"><FontAwesomeIcon title="Email Me: ClairePhillips712@gmail.com" icon={faEnvelope} size="2x" /></a>
@@ -21,7 +22,7 @@ function About() {
                 </div>
             </div>
                 <p>
-                    I'm Claire Phillips. I am learning full stack web development with experience in digital marketing and public relations. 
+                    I'm Claire Phillips. I am learning full stack web development and have experience in digital marketing and public relations. 
                     I am a digital marketing specialist at Dart Container corporation and am looking to take on the world of web developement. 
                     I recently completed a coding bootcamp through Michigan State Univeristy and am looking for a new adventure.
                     I have experience in both front-end and back-end development. I have a proven knowledge of database development, 

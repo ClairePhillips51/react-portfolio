@@ -36,20 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-#headshot {
-  border-radius: 5%;
-  width: 14%;
-}
-
-#main-container {
-  display: flex;
-  flex-flow: row;
-}
-
-#fancy_circle {
-  width: 40%;
-  height: 40%;
-  background-color: #282c34;
-  border-radius: 50%;
-}
