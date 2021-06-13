@@ -1,3 +1,5 @@
 .card {
-    width: 25rem;
+    margin: 10px;
+    padding: 10px;
+    height: 95%;
 }
