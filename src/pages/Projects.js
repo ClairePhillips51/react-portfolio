@@ -7,7 +7,7 @@ function Projects() {
         <div>
             <h1>My Projects</h1>
             <div className="container">
-                <div className="row">
+                <div className="row row-cols-1 row-cols-lg-2 g-4">
                     <Project
                         title="Space-e"
                         image="./images/spacee.png"
@@ -25,8 +25,6 @@ function Projects() {
                         text="Creating the back-end portion of a fitness tracker application by using a Mongo database 
                         with a Mongoose schema and handle routes with Express."
                     />
-                </div>
-                <div className="row">
                     <Project 
                         title="Employee Directory" 
                         image="./images/employee-directory.png" 
@@ -42,8 +40,6 @@ function Projects() {
                         github_url="https://github.com/ClairePhillips51/budget-tracker" 
                         text="Adding offline functionality to the exisitng Budget tracker to transform it into a progressive web application."
                     />
-                </div>
-                <div className="row">
                     <Project 
                         title="Team Profile Generator" 
                         image="./images/team-generator.png" 
