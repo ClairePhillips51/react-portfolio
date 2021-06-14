@@ -27,7 +27,7 @@ function Footer() {
                         <a href="https://www.linkedin.com/in/claire-phillips-46baa062/" target="_blank" rel="noreferrer"><FontAwesomeIcon title="LinkedIn" icon={faLinkedin} size="2x" style={linkStyle}/></a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/clairecamerontv/?hl=en" target="_blank" rel="noreferrer"><FontAwesomeIcon title="Instagram" icon={faInstagram} size="2x" style={linkStyle}/></a>
+                        <a href="https://www.instagram.com/clairecam51/?hl=en" target="_blank" rel="noreferrer"><FontAwesomeIcon title="Instagram" icon={faInstagram} size="2x" style={linkStyle}/></a>
                     </li>
                     </ul>
                 </div>
