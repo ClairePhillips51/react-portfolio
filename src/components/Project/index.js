@@ -24,7 +24,7 @@ function Project(props) {
                     <h4 className="card-title">{props.title}</h4>
                     <p className="card-text">{props.text}</p>
                     <div className="buttons mt-auto d-flex justify-content-evenly">
-                        <a href={props.delpoyed_url} className="btn btn-primary" style={primStyle}>Deployed Project</a>
+                        <a href={props.deployed_url} className="btn btn-primary" style={primStyle}>Deployed Project</a>
                         <a href={props.github_url} className="btn btn-secondary" style={secStyle}>GitHub Repository</a>
                     </div>
                 </div>
