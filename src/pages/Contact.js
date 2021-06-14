@@ -2,7 +2,7 @@ import React from "react";
 
 function Contact() {
     return (
-        <div>
+        <div className="text-center">
             <h2> Contact Me </h2>
             <p> 
                 Hello! Want to see more of my work? Reach out to me on my <a href="https://github.com/ClairePhillips51" target="_blank" rel="noreferrer">GitHub Profile</a>
