@@ -10,7 +10,7 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <div>
+      <div id="main-container">
         <Header />
         <div>
           <Route exact path="/" component={About} />
@@ -18,8 +18,8 @@ function App() {
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/contact" component={Contact} />
         </div>
+        <Footer />
       </div>
-      <Footer />
     </Router>
   );
 }

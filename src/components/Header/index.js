@@ -5,10 +5,14 @@ import "./style.css";
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 function Header() {
+  const linkStyle = {
+    color: "#c1c8e4"
+  };
+
   return (
-    <nav id="header" className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="header" className="navbar navbar-expand-lg navbar-light">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
+        <Link className="navbar-brand" to="/" style={linkStyle}>
           Claire Phillips
         </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,6 +28,7 @@ function Header() {
                     ? "nav-link active"
                     : "nav-link"
                 }
+                style={linkStyle}
               >
                 About Me
               </Link>
@@ -32,6 +37,7 @@ function Header() {
               <Link
                 to="/projects"
                 className={window.location.pathname === "/projects" ? "nav-link active" : "nav-link"}
+                style={linkStyle}
               >
                 My Projects
               </Link>
@@ -40,6 +46,7 @@ function Header() {
               <Link
                 to="/contact"
                 className={window.location.pathname === "/contact" ? "nav-link active" : "nav-link"}
+                style={linkStyle}
               >
                 Contact Me
               </Link>

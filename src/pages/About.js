@@ -4,6 +4,10 @@ import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-
 import "./about.css";
 
 function About() {
+    const linkStyle = {
+        color: "#496ecc"
+    };
+
     return (
         <div className="container">
             <div className="row">
@@ -16,9 +20,9 @@ function About() {
                             <a className="a" href="pictures/Claire_Phillips_Resume2.pdf" target="_blank" rel="noreferrer">My Resume</a>
                             <p id="connect"> Connect with me: </p>
                             <div className="social-links">
-                                <a href="https://github.com/ClairePhillips51" target="_blank" rel="noreferrer"><FontAwesomeIcon title="GitHub" icon={faGithub} size="2x" /></a>
-                                <a href="https://www.linkedin.com/in/claire-phillips-46baa062/" target="_blank" rel="noreferrer"><FontAwesomeIcon title="LinkedIn" icon={faLinkedin} size="2x" /></a>
-                                <a href="https://www.instagram.com/clairecamerontv/?hl=en" target="_blank" rel="noreferrer"><FontAwesomeIcon title="Instagram" icon={faInstagram} size="2x" /></a>
+                                <a href="https://github.com/ClairePhillips51" target="_blank" rel="noreferrer"><FontAwesomeIcon title="GitHub" icon={faGithub} size="2x" style={linkStyle}/></a>
+                                <a href="https://www.linkedin.com/in/claire-phillips-46baa062/" target="_blank" rel="noreferrer"><FontAwesomeIcon title="LinkedIn" icon={faLinkedin} size="2x" style={linkStyle}/></a>
+                                <a href="https://www.instagram.com/clairecamerontv/?hl=en" target="_blank" rel="noreferrer"><FontAwesomeIcon title="Instagram" icon={faInstagram} size="2x" style={linkStyle}/></a>
                             </div>
                         </div>
                     </div>
