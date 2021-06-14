@@ -7,7 +7,7 @@ import "./style.css";
 function Footer() {
   return (
     <footer className="footer">
-        <nav className="navbar navbar-expand navbar-light bg-light">
+        <nav className="navbar navbar-expand navbar-light bg-light d-flex justify-content-center">
             <div>
                 <ul className="navbar-nav">
                 <li>
