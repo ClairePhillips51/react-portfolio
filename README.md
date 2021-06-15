@@ -1,12 +1,12 @@
 # react portfolio
 
 ## Links
-Link to deployed application [GitHub Pages Link](https://clairephillips51.github.io/employee-directory/)
+Link to deployed application [GitHub Pages Link](https://clairephillips51.github.io/react-portfolio/#/)
 
 ## Summary
  Creating a multi-page portfolio using React and React Router for navigation. Displaying skills using some of the latest technologies. 
 
-![What the Employee Directory looks like](pictures/what-it-looks-like.png)
+![What my portfolio looks like](pictures/about-me.png)
 
 ## Table of Contents
 1. [Usage](#usage)
@@ -16,31 +16,31 @@ Link to deployed application [GitHub Pages Link](https://clairephillips51.github
 5. [Getting Started with Create React App](#getting-started-with-create-react-app)
 
 ## Usage
-Creating an employee directory using React. A table displays the employees non-sensitive data with a picture of the employee, their full name, email, office number, and cell phone number.  A search bar at the top of the page under the header lets a user sort the employees by name and a button on the name column of the employee table lets you sort the employees by name in accending order alphabetically. When sorted a down arrows appears next to name so the user will be able to tell easily if the list was sorted. The user can also sort the employees by name alphabetically when using the search bar.  
+Creating a multi-page portfolio using react with hash-router to manage the different paths and make for smooth transition between page views. The user can find the About Me page that gives a brief introductory paragraph and has a picture, a link to my resume, my email, my github profile, and some social links.  
 
-### Unsorted Employee Directory 
-![Picture of employees unsorted](pictures/unsorted.png)
+The projects page has cards holding the different projects with a picture of the individual project, a brief description, and links to the deployed application and to the GitHub repo for each project. The contact me page is short and holds additional links to my email, linkedIn profile, and GitHub profile. The footer also contains font awesome icons that are links to the same content and a link to my instagram account. 
 
-### Sorted Employee Directory 
-![Picture of employees sorted alphabetically](pictures/sorted.png)
+![Picture of the projects page](pictures/projects.png)
 
 ## Setup
-This application was created in react with componets. UseState is used to more easily manage state and useEffect is used to respond to user events more effectivly. The app is broken up into three componenets: employee, table, and searchbar. The individual components hold props. UseEffect is helpful in setting up the sorting and filtering capabilites of the table.  
+This application is comprised of three pages (About Me, Projects, and Contact Me) and three components (the header, footer, and projects). The header and footer components are on all three pages and the projects component uses props so that it can be resued multiple times on the project page. The whole application is built with a mobile-first mind set which is why I used bootstrap as it's easer to change the what the app looks like using the grid system and column breakpoints.  
 
-![How UseEffect helped with sorting](pictures/search-filter.png)  ![useEffect code](pictures/use-effect.png)
-
-The employee table is limited to the first 100 people that came out the Random User API. This was done so the app will load quicker and not change everytime the page is refreshed to mimic what a real employee directory is like since your employees likely don't change every day. 
+![Responsive Design proof](pictures/i-phone-view.png)
 
 ## What I Learned
-This project was difficult to set up at first. I was trying to figure out how the components would talk together and come together in App.js. I ultimaly decided to use hooks as it was easier to manage and change the state of the components with useState. UseEffect also took some tweaking and reading, but it helped a lot with how to sort the employees. I chose to sort the employees by name as it was the easiest attriubute to pick out of the returned array.  
+This project was the first practical practice I had with react router and using hash router. During the development phase of the portfolio I used the basic react router to navigate between pages and then before deploying it to github pages I changed it to hash router. 
 
-Getting the app the deploy also took some tweaking as github wasn't getting the right url to the app from 'homepage'. I just had to go correct it in the packagelock.json and then push that for the web app to deploy correctly. 
+The most time consuming part of this project was actually getting the font awesome icons to render correctly. I initally tried adding the link tag to the html document, but it still didn't work correctly some after some googling I decided to install it as a dependency and use the font awesome react component. I also struggled figuring out that I had to import the individual font-awesome icons at the top the footer.js component file. 
+
+![useEffect code](pictures/font-awesome.png)
+
+I also used a css :root pseudo class for colors and was happy that I was able to set it in the app.css style sheet and use it on other css pages without having to import it to each page. There were some components were I had to use in-line styling for to overwrtie the bootstrap styling. I enjoyed working on this and hope to add improved styling and animation as I continue to work on this project. 
 
 ## Resources
-* [House Router](https://reactrouter.com/web/api/HashRouter)
-* [React Docs](https://reactjs.org/docs/getting-started.html)
-* [React Hooks](https://reactjs.org/docs/hooks-intro.html)
-* [Random User API](https://randomuser.me/) 
+* [Hash Router](https://reactrouter.com/web/api/HashRouter)
+* [React Font awesome](https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react)
+* [Css root](https://developer.mozilla.org/en-US/docs/Web/CSS/:root)
+* [React bootstrap](https://react-bootstrap.github.io/getting-started/introduction) 
 
 <hr>
 
